@@ -8,3 +8,7 @@
 .hero-text-box {
     justify-content: center;
 }
+
+Container {
+    margin-top: 100px;
+}

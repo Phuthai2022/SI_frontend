@@ -1,14 +1,15 @@
 import { Box, Typography, Grid, Button, Container } from "@mui/material";
-import heroImage from "./images/heroImage.png"
+import heroImage from "./images/heroimage.png"
 //Importing stylesheet for page here...
 import "./stylesheets/homepage.css"
+import "./stylesheets/global.css"
 
 function App() {
   return (
     <div className="App">
         {/* Hero Section */}
         {/* Delete this sx margin top when header is added. */}
-        <Container maxWidth="xl" sx={{marginTop: "100px"}} className="hero-container">
+        <Container maxWidth="xl" className="container">
               <Grid container spacing={8}>
                 <Grid item xs={12} sm={12} md={5} lg={4} textAlign={"center"} alignContent={"center"}>
                   <Typography variant="h3" >
@@ -28,8 +29,17 @@ function App() {
               </Grid>
         </Container>
         {/* Video Section */}
-        <Container maxWidth="xl">
-            
+        <Container maxWidth="xl" className="container">
+          <Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12} textAlign={"center"}>
+              <Typography variant="h3">
+                Introduction Video text text text
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
+              
+            </Grid>
+          </Grid>
         </Container>
     </div>
   );
