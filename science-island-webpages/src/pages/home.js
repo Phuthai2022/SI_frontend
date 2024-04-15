@@ -2,13 +2,16 @@ import { Box, Typography, Grid, Button, Container } from "@mui/material";
 import heroImage from "../images/heroimage.png";
 import placeholderImage from "../images/placeholderimage.jpeg";
 import ReactPlayer from 'react-player';
+import Nav from "../components/nav.js";
 //Importing stylesheet for page here...
 import "../stylesheets/homepage.css"
 import "../stylesheets/global.css"
 
-function App() {
+function Homepage() {
   return (
     <div className="App">
+
+        <Nav></Nav>
         {/* Hero Section */}
         {/* Delete this sx margin top when header is added. */}
         <Container maxWidth="xl" className="container">
@@ -99,4 +102,4 @@ function App() {
   );
 }
 
-export default App;
+export default Homepage;
