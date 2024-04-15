@@ -1,5 +1,6 @@
 import { Box, Typography, Grid, Button, Container } from "@mui/material";
 import heroImage from "./images/heroimage.png";
+import placeholderImage from "./images/placeholderimage.jpeg";
 import ReactPlayer from 'react-player';
 //Importing stylesheet for page here...
 import "./stylesheets/homepage.css"
@@ -44,7 +45,7 @@ function App() {
                 Introducing Science Island
               </Typography>
               <Typography variant="h6">
-                Calling All Curious Minds: Science Island Awaits! Perfect for Young Explorers and Future Scientists!
+                Calling All Curious Minds: Science Island Awaits! Seeking all Young Explorers and Future Scientists!
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -61,26 +62,35 @@ function App() {
                   Why Use Science Island?
                 </Typography>
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={6} sm={6} xs={6}>
                 <Box className="why-section-box">
-                  <h3>Inspire Lifelong Learning</h3>
-                  <img src=""></img>
-                  <p></p>
+                  <Typography variant="h5">Learn from the Best</Typography>
+                  <img src={placeholderImage} alt="Placeholder Image"></img>
+                  <Typography variant="h6">Benefit from the expertise of world leading scientists and educators.</Typography>
                 </Box>
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={6} sm={6} xs={6}>
                 <Box className="why-section-box">
-                  <h3>The</h3>
+                <Typography variant="h5">Fueling Lifelong Learning</Typography>
+                  <img src={placeholderImage} alt="Placeholder Image"></img>
+                  <Typography variant="h6">
+                  Explore complex scientific concepts, fostering curiosity and independence. 
+                </Typography>
                 </Box>
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={6} sm={6} xs={6}>
                 <Box className="why-section-box">
-                  <h3>The</h3>
+                <Typography variant="h5">Make Learning Fun</Typography>
+                  <img src={placeholderImage} alt="Placeholder Image"></img>
+                  <Typography variant="h6">Say goodbye to boring textbooks, instead embrace engaging challenges, and interactive activities.</Typography>
                 </Box>
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={6} sm={6} xs={6}>
                 <Box className="why-section-box">
-                  <h3>The</h3>
+                <Typography variant="h5">Inspiring Future Minds</Typography>
+                  <img src={placeholderImage} alt="Placeholder Image"></img>
+                  <Typography variant="h6">Showcasing science and technology in a fun, engaging way. We aim to ignite a passion
+                  for learning and discovery.</Typography>
                 </Box>
               </Grid>
           </Grid>
