@@ -2,3 +2,8 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+/* Use this class to make react-player responsive. Has to be in a grid. */
+.react-player {
+    max-width: 100%;
+  }
