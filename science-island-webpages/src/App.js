@@ -1,14 +1,35 @@
 import { Box, Typography, Grid, Button, Container } from "@mui/material";
-import heroImage from "./images/heroimage.png"
+import heroImage from "./images/heroImage.png";
 //Importing stylesheet for page here...
-import "./stylesheets/homepage.css"
-import "./stylesheets/global.css"
+import "./stylesheets/homepage.css";
+import "./stylesheets/global.css";
+
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginAs from './loginas';
+import NavBar from './tempnav'; 
 
 function App() {
   return (
     <div className="App">
+
+    <Router>  
+      {/* loginas, login, navbar,  etc */}
+
+        <NavBar />       
+        <div className='flex flex-nowrap flex-col min-h-screen'>
+            <div className='flex-grow'>
+                <Routes>
+                    <Route path='/loginas' element={<LoginAs />} />
+                </Routes>
+            </div>
+        </div>
+    </Router>
+
         {/* Hero Section */}
         {/* Delete this sx margin top when header is added. */}
+
+
         <Container maxWidth="xl" className="container">
               <Grid container spacing={8}>
                 <Grid item xs={12} sm={12} md={5} lg={4} textAlign={"center"} alignContent={"center"}>
