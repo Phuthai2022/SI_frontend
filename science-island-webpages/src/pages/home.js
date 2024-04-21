@@ -1,5 +1,5 @@
 import { Box, Typography, Grid, Button, Container } from "@mui/material";
-import heroImage from "../images/heroimage.png";
+import heroImage from "../images/heroImage.png";
 import placeholderImage from "../images/placeholderimage.jpeg";
 import ReactPlayer from 'react-player';
 import Nav from "../components/nav.js";
